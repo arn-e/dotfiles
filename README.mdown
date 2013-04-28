@@ -1,3 +1,3 @@
-## Dotfiles
+## config files 
 
-My personal dotfiles, nothing too cray cray
+My personal config files, nothing too cray cray
