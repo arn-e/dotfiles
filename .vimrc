@@ -1,61 +1,67 @@
-runtime! autoload/pathogen.vim
-if exists('g:loaded_pathogen')
-  execute pathogen#infect('~/.vimbundles/{}')
-endif
-
-syntax on
-filetype plugin indent on
-
-
 set nocompatible
-set showcmd
 
+" Pathogen
+call pathogen#infect()
+call pathogen#helptags()
+ 
+set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
+filetype plugin indent on
+ 
+syntax on
+set number
+set mouse=a
+set mousehide
+
+set hlsearch
+set incsearch
+set ignorecase
+set autoindent
+set history=1000
+set cursorline
 set expandtab
-set smarttab
-
 set shiftwidth=2
+set tabstop=2
 set softtabstop=2
 
-set number
+" Nerdtree
+"autocmd vimenter * NERDTree
+let NERDTreeShowBookmarks=1
+let NERDTreeChDirMode=0
+let NERDTreeQuitOnOpen=1
+let NERDTreeMouseMode=2
+let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.pyc','\~$','\.swo$','\.swp$','\.git','\.hg','\.svn','\.bzr']
+let NERDTreeKeepTreeInNewTab=1
+let g:nerdtree_tabs_open_on_gui_startup=0
+cmap nt NERDTree<CR> 
+cmap qa q<CR>q<CR>
+set background=dark
+colorscheme wombat
 
-set ignorecase
-set smartcase
+" split screen navigation remaps
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
-inoremap jj <Esc>
-nnoremap JJJJ <Nop>
-
-set incsearch
-set hlsearch
-
-set nohidden
-
-highlight MatchParen ctermbg=4
-
-set laststatus=2
-set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
-
-map N Nzz
-map n nzz
-
-set visualbell
-
-set wildmenu
-set wildmode=list:longest,full
-
-set splitright
+" defaults new splits to the right & bottom
 set splitbelow
+set splitright
 
-set hidden
+"Max out the height of the current split
+"ctrl + w _
 
-set guifont=Monaco:h16
-set guioptions-=T guioptions-=e guioptions-=L guioptions-=r
-set shell=bash
+"Max out the width of the current split
+"ctrl + w |
 
-augroup vimrc
-  autocmd!
-  autocmd GuiEnter * set columns=120 lines=70 number
-augroup END
+"Normalize all split sizes, which is very handy when resizing terminal
+"ctrl + w =
 
-if filereadable(expand('~/.vimrc.local'))
-  source ~/.vimrc.local
-endif
+"Swap top/bottom or left/right split
+"Ctrl+W R
+
+"Break out current window into a new tabview
+"Ctrl+W T
+
+"Close every window in the current tabview but the current one
+"Ctrl+W o

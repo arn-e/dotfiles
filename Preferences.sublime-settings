@@ -1,0 +1,9 @@
+{
+    "color_scheme": "Packages/Theme - Flatland/Flatland.tmtheme",
+    "font_size": 13.0,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "theme": "Flatland.sublime-theme"
+}
