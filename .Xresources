@@ -1,0 +1,8 @@
+
+Xft.autohint:1
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.antialias: 1
+
+Urxvt.depth: 32
+URxvt.background:   rgba:1111/1111/1111/dddd
