@@ -48,6 +48,17 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
+set hlsearch
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+let g:nerdtree_tabs_open_on_console_startup=1
+let mapleader =","
+map <Leader> <Plug>(easymotion-prefix)
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 "Max out the height of the current split
 "ctrl + w _
 
