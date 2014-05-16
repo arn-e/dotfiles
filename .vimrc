@@ -46,3 +46,5 @@ map <Leader> <Plug>(easymotion-prefix)
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 set number
+
+command Cpc CtrlPClearCache
