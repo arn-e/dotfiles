@@ -1,0 +1,10 @@
+{
+	"http_proxy": "http://proxy.sei.cmu.edu:8080",
+	"https_proxy": "https://proxy.sei.cmu.edu:8080",
+	"installed_packages":
+	[
+		"Package Control",
+		"Theme - Flatland",
+		"Theme - Soda"
+	]
+}
