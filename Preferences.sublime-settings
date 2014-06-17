@@ -6,6 +6,7 @@
 	[
 		// "Vintage"
 	],
-	"theme": "Soda Dark.sublime-theme",
+	// "theme": "Soda Dark.sublime-theme",
+	"theme": "Flatland Dark.sublime-theme",
 	"vintage_start_in_command_mode": true
 }
