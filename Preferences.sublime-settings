@@ -1,12 +1,14 @@
-{
-	"color_scheme": "Packages/Theme - Flatland/Flatland Dark.tmTheme",
-	"font_size": 10.0,
-	// "font_options": ["bold"],
-	"ignored_packages":
-	[
-		// "Vintage"
-	],
-	// "theme": "Soda Dark.sublime-theme",
-	"theme": "Flatland Dark.sublime-theme",
-	"vintage_start_in_command_mode": true
+
+lor_scheme": "Packages/Theme - Flatland/Flatland Dark.tmTheme",
+    "font_options":
+    [
+        "bold"
+    ],
+    "font_size": 9,
+    "ignored_packages":
+    [
+    ],
+    "theme": "Flatland Dark.sublime-theme",
+    "vintage_start_in_command_mode": true
 }
+
